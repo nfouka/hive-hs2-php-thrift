@@ -17,3 +17,5 @@ git clone git@github.com:QwertyManiac/hive-hs2-php-thrift
 cd hive-hs2-php-thrift
 php HS2Client.php
 ```
+
+(This should work for mostly any CDH version cluster)
