@@ -20,6 +20,8 @@
 
     try {
         $socket = new TSocket('localhost', '10000');
+        $socket->setSendTimeout(30 * 1000);
+        $socket->setRecvTimeout(30 * 1000);
         $transport = new TBufferedTransport($socket);
         $protocol = new TBinaryProtocol($transport);
 
