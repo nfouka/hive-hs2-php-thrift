@@ -9,7 +9,6 @@ add :
   <value>NOSASL</value>
 </property>
 
-
 Program sources are in ``HS2Client.php``
 
 Dependencies (Thrift libs, and Hive I/F) are under ``thrift/`` and ``hive/``
