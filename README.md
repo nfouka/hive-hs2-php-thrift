@@ -1,7 +1,14 @@
 A Thrift-Based HiveServer2 Connection and Execution Example in PHP
 ==================================================================
 
-This illustratory example, given the lack of a *sasl*-enabled ``TSaslTransport`` in Apache Thrift's PHP libraries, will only work with HiveServer2s that have their ``hive.server2.authentication`` configuration set to ``NOSASL``.
+This illustratory example, given the lack of a *sasl*-enabled ``TSaslTransport`` in Apache Thrift's PHP libraries, will only work with HiveServer2s that have their ``hive.server2.authentication`` configuration set to ``NOSASL``. 
+
+add : 
+<property>
+  <name>hive.server2.authentication</name>
+  <value>NOSASL</value>
+</property>
+
 
 Program sources are in ``HS2Client.php``
 
